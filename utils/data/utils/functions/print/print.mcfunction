@@ -1,0 +1,1 @@
+$tellraw @a {"type":"translatable", "translate":"$(format)", "with":["$(value)"]}
