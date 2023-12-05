@@ -1,0 +1,2 @@
+$execute if score $number.add.has_value utils matches 1 run data modify storage $(storage) $(key)[$(index)] set value $(value)
+$execute if score $number.add.has_value utils matches 0 run data modify storage $(storage) $(key) prepend value $(value)
