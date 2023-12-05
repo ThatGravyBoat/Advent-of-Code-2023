@@ -6,4 +6,4 @@ $execute store result score $number.value2 utils run data get storage $(storage2
 execute if score $number.value1 utils > $number.value2 utils run scoreboard players set $number.compare utils 1
 execute if score $number.value1 utils < $number.value2 utils run scoreboard players set $number.compare utils -1
 execute if score $number.value1 utils = $number.value2 utils \
-run function utils:number/compare_loop with storage utils:utils number.params
+run function utils:number/compare/compare with storage utils:utils number.params

@@ -1,12 +1,3 @@
-# $(storage1) $(key1) value
-# $(storage2) $(key2) adder
-# 0 = equal
-# 1 = first is bigger
-# -1 = second is bigger
-
-# storage goes like [sign, ...digits]
-# sign is 1 for positive and 0 for negative
-
 $scoreboard players set $number.add.index utils $(index)
 scoreboard players operation $number.add.index_length utils = $number.add.index utils
 scoreboard players operation $number.add.index_length utils %= $1000 utils
@@ -23,7 +14,6 @@ $execute store result score $number.add.value utils run data get storage $(stora
 $execute store result score $number.add.adder utils run data get storage $(storage2) $(key2)[$(index)]
 
 $execute store result score $number.add.number_length utils run data get storage $(storage1) $(key1)
-function utils:print/score { format: "Value Length: %s", objective: "utils", player: "$number.add.number_length"}
 execute if score $number.add.length utils <= $number.add.number_length utils run scoreboard players set $number.add.has_value utils 1
 $execute store result score $number.add.number_length utils run data get storage $(storage2) $(key2)
 execute if score $number.add.length utils <= $number.add.number_length utils run scoreboard players set $number.add.has_adder utils 1
@@ -48,10 +38,6 @@ scoreboard players operation $number.add.value utils %= $10 utils
 
 scoreboard players operation $number.add.carry utils = $number.add.result utils
 scoreboard players operation $number.add.carry utils /= $10 utils
-
-function utils:print/score { format: "Result: %s", objective: "utils", player: "$number.add.result"}
-function utils:print/score { format: "New Value: %s", objective: "utils", player: "$number.add.value"}
-function utils:print/score { format: "New Carry: %s", objective: "utils", player: "$number.add.carry"}
 
 $data modify storage utils:utils number.insert.params.index set value $(index)
 $data modify storage utils:utils number.insert.params.storage set value "$(storage1)"
