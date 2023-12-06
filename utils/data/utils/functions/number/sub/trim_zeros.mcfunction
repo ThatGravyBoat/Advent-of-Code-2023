@@ -1,0 +1,2 @@
+$execute unless score $0 utils matches $(value) run scoreboard players set $found_number utils 1
+$execute if score $found_number utils matches 1 run data modify storage utils:utils number.sub.array append value $(value)

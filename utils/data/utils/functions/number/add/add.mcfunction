@@ -18,8 +18,6 @@ execute if score $number.add.length utils <= $number.add.number_length utils run
 $execute store result score $number.add.number_length utils run data get storage $(storage2) $(key2)
 execute if score $number.add.length utils <= $number.add.number_length utils run scoreboard players set $number.add.has_adder utils 1
 
-$tellraw @a "Checking: $(index)"
-
 # Nothing to do
 execute \
 if score $number.add.has_value utils matches 0 \
