@@ -35,6 +35,7 @@ execute if score $number.sub.has_subber utils matches 1 run scoreboard players o
 scoreboard players operation $number.sub.result utils -= $number.sub.carry utils
 
 execute if score $number.sub.result utils < $0 utils run scoreboard players set $number.sub.carry utils 1
+execute if score $number.sub.result utils >= $0 utils run scoreboard players set $number.sub.carry utils 0
 execute if score $number.sub.result utils < $0 utils run scoreboard players operation $number.sub.result utils += $10 utils
 
 scoreboard players operation $number.sub.value utils = $number.sub.result utils

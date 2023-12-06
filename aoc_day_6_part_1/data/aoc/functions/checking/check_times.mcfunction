@@ -1,0 +1,1 @@
+function utils:foreach/run { storage:"aoc:data", key:"time", function:"aoc:checking/check_time" }

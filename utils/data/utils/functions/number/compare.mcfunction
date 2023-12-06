@@ -8,7 +8,7 @@ $execute store result score $number.length1 utils run data get storage $(storage
 $execute store result score $number.length2 utils run data get storage $(storage2) $(key2)
 
 # if (length1 > length2) compare = 1
-# if (length1 < length2) compare = 2
+# if (length1 < length2) compare = -1
 # if (length1 != length2) return
 execute if score $number.length1 utils > $number.length2 utils run scoreboard players set $number.compare utils 1
 execute if score $number.length1 utils < $number.length2 utils run scoreboard players set $number.compare utils -1

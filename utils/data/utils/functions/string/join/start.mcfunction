@@ -1,0 +1,1 @@
+$data modify storage utils:utils string.current set value "$(value)"
