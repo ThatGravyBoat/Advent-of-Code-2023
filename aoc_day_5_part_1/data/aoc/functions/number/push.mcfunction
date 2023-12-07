@@ -1,1 +1,0 @@
-$data modify storage aoc:data value append value $(char)
