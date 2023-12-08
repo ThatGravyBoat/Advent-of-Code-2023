@@ -1,0 +1,1 @@
+$data modify storage aoc:data $(key) set from storage aoc:data values
