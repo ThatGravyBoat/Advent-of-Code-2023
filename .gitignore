@@ -1,6 +1,7 @@
 .idea
 
 # Days ive failed, but still keep locally but not on github
-aoc_day_3_part_1/
-aoc_day_5_part_1/
-aoc_day_6_part_2/
+/aoc_day_3_part_1/
+/aoc_day_5_part_1/
+/aoc_day_6_part_2/
+/aoc_day_7_part_1/
