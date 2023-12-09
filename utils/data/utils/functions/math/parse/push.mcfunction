@@ -1,0 +1,1 @@
+$data modify storage utils:utils number.parse.value set value "$(value)$(char)"

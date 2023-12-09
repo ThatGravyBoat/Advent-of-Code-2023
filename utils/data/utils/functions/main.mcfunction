@@ -7,5 +7,6 @@ scoreboard players set $10 utils 10
 scoreboard players set $2 utils 2
 scoreboard players set $1 utils 1
 scoreboard players set $0 utils 0
+scoreboard players set $-1 utils -1
 
 data modify storage utils:utils number.1 set value [1]
