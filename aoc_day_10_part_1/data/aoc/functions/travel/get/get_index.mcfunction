@@ -1,0 +1,1 @@
+$data modify storage aoc:data result set from storage aoc:data tiles[$(y)].value[$(x)]
